@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": ">=5.5",
-    "phpoffice/phpexcel": "^1.8.1",
+    "phpoffice/phpexcel": "1.8.x-dev",
     "illuminate/cache": "^5.0",
     "illuminate/config": "^5.0",
     "illuminate/filesystem": "^5.0",
@@ -62,5 +62,14 @@
                 "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
             }
         }
+    },
+    "repositories": [{
+      "type": "vcs",
+      "url": "https://github.com/holymp2006/PHPExcel"
+    }],
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
     }
+  }
 }
